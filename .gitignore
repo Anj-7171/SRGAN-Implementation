@@ -1,0 +1,20 @@
+# Model checkpoints
+*.pth
+
+# Dataset
+data/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs
+logs/
+
+# Output images
+output_sr.png
+test_lr.png
+
+# VGG cache
+.cache/
