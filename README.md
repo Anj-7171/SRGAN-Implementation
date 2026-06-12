@@ -12,6 +12,9 @@ Traditional super-resolution methods often optimize for pixel-wise accuracy, res
 
 The original SRGAN paper demonstrated significant improvements in visual quality compared to conventional CNN-based super-resolution methods. :contentReference[oaicite:0]{index=0}
 
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/976e0d62-882a-4ba4-aa9f-704627aab679" />
+
+
 ---
 
 ## Features
