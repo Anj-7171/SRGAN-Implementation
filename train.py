@@ -21,7 +21,8 @@ def train():
     bce = nn.BCEWithLogitsLoss()
     l1  = nn.L1Loss()
 
-    dataset    = SRDataset(config.TRAIN_DIR, config.HIGH_RES)
+    #dataset    = SRDataset(config.TRAIN_DIR, config.HIGH_RES)
+    dataset = SRDataset(config.TRAIN_DIR, config.HIGH_RES, config.DEGRADATION_SEVERITY)
     dataloader = DataLoader(dataset, config.BATCH_SIZE, shuffle=True,
                             num_workers=config.NUM_WORKERS, pin_memory=True)
     writer = SummaryWriter("logs")
@@ -58,7 +59,7 @@ def train():
 
     torch.save(gen.state_dict(),  config.CHECKPOINT_GEN)
     torch.save(disc.state_dict(), config.CHECKPOINT_DISC)
-    print("✅ Checkpoints saved.")
+    print("Checkpoints saved.")
 
 if __name__ == "__main__":
     train()

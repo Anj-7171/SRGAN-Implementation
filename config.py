@@ -15,3 +15,6 @@ IMG_CHANNELS = 3
 TRAIN_DIR = "data/train"  # folder of HR images
 CHECKPOINT_GEN = "gen.pth"
 CHECKPOINT_DISC = "disc.pth"
+
+
+DEGRADATION_SEVERITY = "medium"
