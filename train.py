@@ -8,7 +8,7 @@ import config
 from models.generator import Generator
 from models.discriminator import Discriminator
 from models.feature_extractor import VGGFeatureExtractor
-from data.dataset import SRDataset
+from dataset import SRDataset
 
 def train():
     gen  = Generator().to(config.DEVICE)
