@@ -4,7 +4,7 @@ import torch
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 print(f"Using device: {DEVICE}")         # or "cpu"
 LEARNING_RATE = 1e-4
-NUM_EPOCHS = 20
+NUM_EPOCHS = 100
 BATCH_SIZE = 16
 NUM_WORKERS = 4
 HIGH_RES = 96             # HR patch size
